@@ -1,0 +1,51 @@
+<mat-toolbar class="toolbar">
+
+  <span class="title">spikehealth</span> <span class="logo_text">inc.</span>
+  <span class="example-spacer"></span>
+ 
+  <button mat-icon-button class="example-icon favorite-icon"   matTooltip="Request a demo" aria-label="Example icon-button with heart icon">
+    <mat-icon>add</mat-icon>
+  </button>
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <mat-toolbar color="primary" class="tlb_menu">
+      <div class="tlb_header">
+        <img src="assets/profile.PNG" alt="" class="img_tbl">
+         <span style="font-size: 14px; line-height: 75px; margin-left: 4px;">Samuel Henga</span>
+      </div>
+         
+    </mat-toolbar>
+    <button mat-menu-item class="section_menu">
+      <mat-icon class="icon_menu">person</mat-icon>
+      Profile</button>
+    <button mat-menu-item class="section_menu">
+      <mat-icon class="icon_menu">settings</mat-icon>
+      Settings</button>
+      <mat-divider></mat-divider>
+    <button mat-menu-item routerLink="/login" class="section_menu">
+      <mat-icon class="icon_menu">power_settings_new
+      </mat-icon>
+      Logout</button>
+  </mat-menu>
+</mat-toolbar>
+<mat-toolbar style="background:#1A237E">
+   <div class="menu_tab">
+     <button mat-button routerLink="/home">
+       <mat-icon>home
+      </mat-icon> <span>Home</span>
+     </button>
+     <button mat-button routerLink="/dashboard">
+       <mat-icon>view_quilt
+      </mat-icon> <span>Dashboard</span>
+     </button>
+     <button mat-button routerLink="users">
+       <mat-icon>people
+      </mat-icon> <span>Users</span>
+     </button>
+     <button mat-button>
+       <mat-icon>laptop_mac</mat-icon> <span>Care</span>
+     </button>
+   </div>
+</mat-toolbar>

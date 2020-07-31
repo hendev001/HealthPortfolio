@@ -1,0 +1,51 @@
+mat-card{
+width: 600px;
+}
+
+mat-card.class-header{
+    background-color: #283593;
+    color: #fff;
+}
+
+img{
+    width: 90px;
+}
+
+.header{
+    display: flex;
+    
+}
+
+h2{
+    font-weight: 300;
+    font-size: 25px;
+      text-align: center;
+}
+
+mat-form-field{
+    width: 250px;
+}
+
+form{
+    margin-top: 12px;
+}
+
+button{
+  
+   padding: 0 52px;
+    border-radius: 42px;
+    font-size: 15px;
+    background: #283593;
+}
+
+
+.wrapper{
+    margin-left: auto;
+}
+.email, .user{
+    width: 515px;
+}
+
+.cpwd, .FN{
+    margin-left: 15px;
+}
